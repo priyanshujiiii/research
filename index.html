@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designer Portfolio</title>
+    <title>Research Student Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -14,7 +14,7 @@
         }
 
         header {
-            background: #222;
+            background: #000;
             color: #fff;
             padding: 1rem 2rem;
             display: flex;
@@ -25,6 +25,7 @@
         header .logo {
             font-size: 1.5rem;
             font-weight: bold;
+            color: #0f0;
         }
 
         header nav a {
@@ -35,17 +36,23 @@
         }
 
         header nav a:hover {
-            color: #ff5733;
+            color: #f00;
         }
 
         .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            height: 100vh;
-            color: #fff;
+            background: #000;
+            color: #0f0;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
+            height: 100vh;
+            padding: 10px;
+            margin-top: 0px;
+            padding-left: 20px;
+        }
+
+        .hero .content {
+            max-width: 50%;
         }
 
         .hero h1 {
@@ -59,7 +66,7 @@
         }
 
         .hero button {
-            background: #ff5733;
+            background: #f00;
             color: #fff;
             border: none;
             padding: 0.8rem 2rem;
@@ -69,17 +76,51 @@
         }
 
         .hero button:hover {
-            background: #e14d2a;
+            background: #c00;
+        }
+
+        .hero .animation {
+            width: 40%;
+            height: 80%;
+            background: linear-gradient(45deg, #0f0, #f00, #000);
+            border-radius: 10px;
+            animation: neural-net 5s infinite;
+        }
+
+        @keyframes neural-net {
+            0%, 100% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .profile {
+            text-align: center;
+            padding: 2rem;
+            background: #0f0;
+            color: #000;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
         }
 
         .about, .portfolio, .contact {
             padding: 2rem;
             text-align: center;
+            background: #0f0;
+            color: #000;
         }
 
         .about h2, .portfolio h2, .contact h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: #000;
         }
 
         .portfolio-gallery {
@@ -95,60 +136,67 @@
         }
 
         footer {
-            background: #222;
+            background: #000;
             color: #fff;
             padding: 1rem;
             text-align: center;
         }
 
         footer a {
-            color: #ff5733;
+            color: #0f0;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">[Your Name]</div>
+        <div class="logo">Priyanshu Sharma</div>
         <nav>
+            <a href="#profile">Profile</a>
             <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="project.html">Project</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
-        <div>
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Creative Designer | Problem Solver | Innovator</p>
-            <button>View My Work</button>
+        <div class="content">
+            <img src="profile.jpg" style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover;">
+            <h1>Hi, I'm Priyanshu Sharma</h1>
+            <p>Research Enthusiast | Scholar | Innovator</p>
+            <button>Explore My Work</button>
         </div>
+        <div class="animation"></div>
+    </section>
+
+    <section class="profile" id="profile">
+        <p>I am a research student with a passion for Artificial Intelligence, Deep Learning, Machine Learning, Computer Vision, Reinforcement Learning, NLP, LLM. My focus lies in ML Dl & CV, and I enjoy contributing to the world of knowledge through innovative studies.</p>
     </section>
 
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm a passionate designer with a knack for creating innovative and user-friendly designs. With experience in [specific skills], I strive to bring ideas to life through my work.</p>
+        <p>Welcome to my research portfolio! I am deeply engaged in exploring [specific research field(s)]. My work focuses on advancing knowledge in [area of focus], contributing innovative ideas and solutions.</p>
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2>My Work</h2>
+        <h2>Research Highlights</h2>
         <div class="portfolio-gallery">
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
-            <img src="project4.jpg" alt="Project 4">
+            <img src="paper1.jpg" alt="Research Paper 1">
+            <img src="paper2.jpg" alt="Research Paper 2">
+            <img src="conference.jpg" alt="Conference Presentation">
+            <img src="project.jpg" alt="Research Project">
         </div>
     </section>
 
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>If you'd like to collaborate, discuss ideas, or learn more about my research, feel free to reach out!</p>
+        <p>Email: <a href="mailto:priyanshujiiiiii@gmail.com">priyanshujiiiiii@gmail.com</a></p>
         <p>Phone: +123-456-7890</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved. | <a href="#">Back to Top</a></p>
+        <p>&copy; 2024 Priyanshu Sharma. All Rights Reserved. | <a href="#">Back to Top</a></p>
     </footer>
 </body>
 </html>
