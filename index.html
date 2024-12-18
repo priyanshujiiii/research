@@ -146,6 +146,25 @@
             color: #0f0;
             text-decoration: none;
         }
+        .profile-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .profile-image {
+            max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-image {
+            max-width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -161,7 +180,7 @@
 
     <section class="hero">
         <div class="content">
-            <img src="profile.jpg" style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover;">
+            <img src="profile.jpg" class="profile-image">
             <h1>Hi, I'm Priyanshu Sharma</h1>
             <p>Research Enthusiast | Scholar | Innovator</p>
             <button>Explore My Work</button>
