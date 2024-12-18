@@ -165,6 +165,31 @@
             max-width: 200px;
             }
         }
+        ul {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-left: 20px;
+            list-style-type: square;
+        }
+        .about ul {
+            margin-top: 10px;
+        }
+
+        .about ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Styling for responsive design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            
+            header h1 {
+                font-size: 28px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -183,26 +208,81 @@
             <img src="profile.jpg" class="profile-image">
             <h1>Hi, I'm Priyanshu Sharma</h1>
             <p>Research Enthusiast | Scholar | Innovator</p>
-            <button>Explore My Work</button>
+            <button onclick="location.href='project.html'">Explore My Work</button>
         </div>
     </section>
 
     <section class="profile" id="profile">
-        <p>I am a research student with a passion for Artificial Intelligence, Deep Learning, Machine Learning, Computer Vision, Reinforcement Learning, NLP, LLM. My focus lies in ML Dl & CV, and I enjoy contributing to the world of knowledge through innovative studies.</p>
+        <p>
+            Hello, I am <strong>Sharma Priyanshu Dilip</strong>, currently pursuing a Bachelor's degree at <strong>Stanford University</strong>, 
+            majoring in Data Science and minoring in Computer Science. With a passion for Artificial Intelligence, 
+            Deep Learning, and Machine Learning, I strive to contribute to the ever-evolving world of technology. 
+            My academic pursuits are driven by a love for learning, and I enjoy solving complex challenges through innovation.
+        </p>
     </section>
-
+    
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>Welcome to my research portfolio! I am deeply engaged in exploring [specific research field(s)]. My work focuses on advancing knowledge in [area of focus], contributing innovative ideas and solutions.</p>
+        <p>
+            Welcome to my research portfolio! I am a dedicated student deeply engaged in exploring the intersections of 
+            Computer Science and Data Science. My academic interests span a wide range of topics including 
+            Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), Computer Vision (CV), Natural Language 
+            Processing (NLP), Large Language Models (LLM), and Reinforcement Learning (RL). Among these, I am particularly 
+            passionate about ML, DL, CV, and NLP, where I find immense joy in learning and experimentation.
+        </p>
+        <p>
+            My coursework in Computer Science has provided me with a solid foundation in subjects such as:
+        </p>
+        <ul>
+            <li>Software Engineering</li>
+            <li>Software Testing</li>
+            <li>Computer Systems Design</li>
+            <li>Programming in C</li>
+            <li>Mathematical Thinking</li>
+            <li>Operating Systems</li>
+            <li>Advanced Algorithms</li>
+            <li>Theory of Computation</li>
+            <li>Computer Networks and Internet Protocol</li>
+            <li>Database Management Systems (DBMS)</li>
+        </ul>
+        <p>
+            Additionally, my specialization in Data Science has equipped me with expertise in:
+        </p>
+        <ul>
+            <li>AI: Search Methods for Problem Solving</li>
+            <li>Deep Learning</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning for Computer Vision</li>
+            <li>Special Topics in Machine Learning (Reinforcement Learning)</li>
+            <li>Introduction to Natural Language Processing</li>
+        </ul>
+        <p>
+            I am keenly passionate about research and aspire to make significant contributions to the field. My work is 
+            driven by curiosity and a desire to push the boundaries of what is possible in AI and related domains.
+        </p>
     </section>
-
+    
     <section class="portfolio" id="portfolio">
         <h2>Research Highlights</h2>
         <div class="portfolio-gallery">
-            <img src="paper1.jpg" alt="Research Paper 1">
-            <img src="paper2.jpg" alt="Research Paper 2">
-            <img src="conference.jpg" alt="Conference Presentation">
-            <img src="project.jpg" alt="Research Project">
+            <!-- Project 1 -->
+            <a href="project002.html" style="text-decoration: none; color: black;">
+                <img src="image1.png" alt="CryoET Object Identification" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">CryoET Object Identification</p>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="project003.html" style="text-decoration: none; color: black;">
+                <img src="image3.png" alt="Re-order Text to Minimise Perplexity" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">Re-order Text to Minimise Perplexity</p>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="project006.html" style="text-decoration: none; color: black;">
+                <img src="image2.png" alt="Predict Health Status of Crops" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">Predict Health Status of Crops</p>
+            </a>
+            
         </div>
     </section>
 
@@ -210,7 +290,6 @@
         <h2>Contact Me</h2>
         <p>If you'd like to collaborate, discuss ideas, or learn more about my research, feel free to reach out!</p>
         <p>Email: <a href="mailto:priyanshujiiiiii@gmail.com">priyanshujiiiiii@gmail.com</a></p>
-        <p>Phone: +123-456-7890</p>
     </section>
 
     <footer>
