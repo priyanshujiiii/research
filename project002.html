@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Showcase</title>
+    <title>Project Showcase</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,7 @@
             color: #0f0;
             padding: 10px;
             text-align: center;
+            border-bottom: 2px solid #333;
         }
 
         main {
@@ -38,8 +39,18 @@
         }
 
         .project h3 {
-            margin: 0 0 5px;
+            margin: 10px 0;
             color: #4caf50;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h4 {
+            margin-bottom: 10px;
+            color: #4caf50;
+            text-decoration: underline;
         }
 
         .frameworks {
@@ -59,22 +70,72 @@
 <body>
 
 <header>
-    <h1>CryoET Object Identification</h1>
+    <h1>Project Section Name</h1>
 </header>
 
 <main>
-
     <div class="project">
-        <h2>CryoET Object Identification</h2>
-        <h3>September 2024</h3>
-        <p>
-            Designed an interactive Vue.js interface with token-based authentication, asynchronous backend processes, and caching mechanisms for a seamless experience.
-        </p>
-        <div class="frameworks">
-            <span>Vue.js</span> <span>Redis</span> <span>Celery</span> <span>Python</span> <span>JavaScript</span>
+        <!-- Project Title -->
+        <h2>Project Name</h2>
+        <h3>Completed: November 2024 write here</h3>
+
+        <div class="section">
+            <h4>Project Description</h4>
+            <p>
+                Abstract here
+            </p>
+        </div>
+
+        <!-- Description -->
+        <div class="section">
+            <h4>Project Description</h4>
+            <p>
+                Description
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="section">
+            <h4>Project Objectives</h4>
+            <ul>
+                <li>here</li>
+                <li>here</li>
+                <li>here</li>
+                
+            </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div class="section">
+            <h4>Methodology</h4>
+            <p>
+                The project utilized a preprocessed dataset of customer reviews and implemented the following steps:
+            </p>
+            <ol>
+                <li>Data cleaning and preprocessing using Python libraries such as NLTK and SpaCy.</li>
+                <li>Feature extraction with TF-IDF and word embeddings (GloVe).</li>
+                <li>Model training using Logistic Regression, Random Forest, and fine-tuned BERT.</li>
+                <li>Deployment of the best-performing model via Flask API.</li>
+            </ol>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="section">
+            <h4>Technologies Used</h4>
+            <div class="frameworks">
+                <span>Python</span> <span>TensorFlow</span> <span>BERT</span> <span>Flask</span> 
+                <span>NLTK</span> <span>SpaCy</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="section">
+            <h4>Results</h4>
+            <p>
+                Achieved an overall accuracy of 92% on the test dataset. The application can process over 500 reviews per second in real-time and provides insightful visualizations of sentiment trends.
+            </p>
         </div>
     </div>
-
 </main>
 
 </body>

@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Showcase</title>
+    <title>Project Showcase</title>
     <style>
+            .github-link {
+            text-align: center; /* Center the link */
+            margin: 20px 0; /* Add some vertical spacing */
+        }
+
+        .github-link a {
+            display: inline-flex; /* Align icon and text inline */
+            align-items: center; /* Vertically center the icon and text */
+            text-decoration: none; /* Remove underline */
+            font-family: Arial, sans-serif; /* Use a clean font */
+            font-size: 16px; /* Set font size */
+            color: #4caf50; /* Dark gray for text color */
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid #333; /* Border around the link */
+            border-radius: 8px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth hover effect */
+        }
+
+        .github-link a:hover {
+            background-color: #333; /* Change background color on hover */
+            color: #0f0; /* Change text color on hover */
+        }
+
+        .github-link img {
+            width: 24px; /* Set icon width */
+            height: 24px; /* Set icon height */
+            margin-right: 10px; /* Space between icon and text */
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,6 +45,7 @@
             color: #0f0;
             padding: 10px;
             text-align: center;
+            border-bottom: 2px solid #333;
         }
 
         main {
@@ -38,8 +67,18 @@
         }
 
         .project h3 {
-            margin: 0 0 5px;
+            margin: 10px 0;
             color: #4caf50;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h4 {
+            margin-bottom: 10px;
+            color: #4caf50;
+            text-decoration: underline;
         }
 
         .frameworks {
@@ -59,22 +98,99 @@
 <body>
 
 <header>
-    <h1>BSCS2003P Course Project</h1>
+    <h1>Course Project</h1>
 </header>
 
 <main>
-
     <div class="project">
-        <h2>BSCS2003P Course Project</h2>
-        <h3>May 2024</h3>
-        <p>
-            Built a robust platform for managing influencer-sponsor collaborations with advanced features for tracking and analytics.
-        </p>
-        <div class="frameworks">
-            <span>Flask</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        <!-- Project Title -->
+        <h2>BSCS2003P Course Project (S Grade)</h2>
+        <h3>Completed: May 2024</h3>
+        <div class="github-link">
+            <a href="https://github.com/priyanshujiiii/BSCCS2003P_MAD-1_Project" target="_blank">
+                <img src="github.png" alt="GitHub Logo">
+                Visit Code here
+            </a>
         </div>
-    </div>
 
+        <div class="section">
+            <h4>Abstract</h4>
+            <p>
+                The "Influencer Engagement and Sponsorship Coordination Platform" bridges the gap between sponsors and influencers, offering an efficient system for campaign management and ad request handling. This project showcases modern web development practices, integrating secure user authentication, robust data management, and scalable architecture.
+            </p>
+        </div>
+        <!-- Description -->
+        <div class="section">
+            <h4>Project Description</h4>
+            <p>
+                A dynamic web application catering to three roles: admin, sponsors, and influencers. The platform enables sponsors to create and manage campaigns, influencers to browse and handle ad requests, and admins to monitor platform activities. Key features include campaign categorization, role-based authentication, and robust search functionalities.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="section">
+            <h4>Project Objectives</h4>
+            <p>
+                The primary objectives of the project are as follows:
+            </p>
+            <ul>
+                <li>Facilitate sponsor-influencer collaboration.</li>
+                <li>Streamline campaign management and ad request handling.</li>
+                <li>Provide robust search and discovery functionalities.</li>
+                <li>Ensure secure and scalable platform operations.</li>
+                <li>Enable comprehensive admin oversight of platform activities.</li>
+            </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div class="section">
+            <h4>Methodology</h4>
+            <ol>
+                <li>Requirement analysis to define user roles and interactions.</li>
+                <li>Database design using SQLite for campaigns, ad requests, and profiles.</li>
+                <li>Backend development with Flask for role-based operations and data handling.</li>
+                <li>Frontend development using Jinja2 templates and Bootstrap for UI design.</li>
+                <li>Feature implementation for campaign and request management.</li>
+                <li>Testing and validation through unit and integration tests.</li>
+                <li>Deployment for local testing and demonstration purposes.</li>
+            </ol>
+        </div>
+        <!-- Technologies Used -->
+        <div class="section">
+            <h4>Technologies Used</h4>
+            <div class="frameworks">
+                <span>Python</span> <span>Flask</span> <span>SQLite</span> <span>Jinja2</span>
+                <span>Bootstrap</span> <span>HTML</span> <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="section">
+            <h4>Results</h4>
+            <p>
+                Successfully developed a functional platform facilitating seamless collaboration between sponsors and influencers. Achieved high responsiveness, scalability, and efficient data handling for user roles and campaigns.
+            </p>
+        </div>
+        <div class="section">
+            <h4>Wire Frame</h4>
+            <img src="IESCP_wireframe.png" alt="Wireframe" class="responsive-img">
+        </div>
+        <div class="section">
+            <h4>Database</h4>
+            <img src="database.png" alt="Database Diagram" class="responsive-img">
+        </div>
+        
+        <style>
+            .responsive-img {
+                display: block;
+                max-width: 100%; /* Ensures the image does not exceed the container width */
+                height: auto; /* Maintains the aspect ratio */
+                margin: 10px auto; /* Centers the image horizontally */
+            }
+        </style>
+        
+    
+    </div>
 </main>
 
 </body>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            color: #0f0;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+        }
+
+        .project h2 {
+            margin: 0 0 10px;
+            color: #e60000;
+        }
+
+        .project h3 {
+            margin: 10px 0;
+            color: #4caf50;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h4 {
+            margin-bottom: 10px;
+            color: #4caf50;
+            text-decoration: underline;
+        }
+
+        .frameworks {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        .frameworks span {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project Showcase</h1>
+</header>
+
+<main>
+    <div class="project">
+        <!-- Project Title -->
+        <h2>Influencer Engagement & Sponsorship Coordination Platform - V2 (Advanced Version)</h2>
+        <h3>Completed: December 2024</h3>
+
+        <div class="section">
+            <h4>Abstract</h4>
+            <p>
+                The project focuses on the development of an advanced web application platform designed to bridge the gap between sponsors and influencers. This advanced version builds upon the previous platform (V1) by adding features such as asynchronous task processing, enhanced performance using Redis caching, and improved security with token-based authentication. The system allows sponsors to create and manage campaigns, while influencers can accept ad requests and manage their profiles. The platform aims to streamline the advertising process, optimize influencer engagement, and provide better control over campaign outcomes.
+            </p>
+        </div>
+
+        <!-- Description -->
+        <div class="section">
+            <h4>Project Description</h4>
+            <p>
+                The "Influencer Engagement & Sponsorship Coordination Platform - V2" is an advanced version of its predecessor (V1), with several enhancements aimed at improving system performance and user experience. This version incorporates asynchronous task handling with Celery and Redis, allows real-time updates using Vue.js, and enhances security with JWT authentication. The platform facilitates campaign creation, management, and tracking, as well as influencer engagement, and aims to provide seamless interactions for both sponsors and influencers.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="section">
+            <h4>Project Objectives</h4>
+            <ul>
+                <li>Develop a platform for sponsors and influencers to engage in advertisement contracts (advanced version of V1).</li>
+                <li>Improve system performance by integrating Celery and Redis for task execution and caching.</li>
+                <li>Enhance security using JWT authentication and implement role-based access control.</li>
+                <li>Provide better user experience with real-time updates and performance optimizations.</li>
+            </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div class="section">
+            <h4>Methodology</h4>
+            <p>
+                The project was developed following an agile methodology with the following steps:
+            </p>
+            <ol>
+                <li>System architecture design with Flask backend and Vue.js frontend, building on the V1 framework.</li>
+                <li>Integration of Celery and Redis for batch task execution such as sending reminders and generating reports, optimizing system performance.</li>
+                <li>Frontend development with Vue.js for dynamic interaction, form validation, and real-time updates, improving the user interface.</li>
+                <li>Database setup with SQLite, optimizing queries and adding caching mechanisms to handle increased load efficiently.</li>
+            </ol>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="section">
+            <h4>Technologies Used</h4>
+            <div class="frameworks">
+                <span>Flask</span> <span>Vue.js</span> <span>SQLite</span> <span>Celery</span> 
+                <span>Redis</span> <span>JWT</span> <span>Bootstrap</span> <span>Python</span>
+                <span>HTML</span> <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="section">
+            <h4>Results</h4>
+            <p>
+                The platform is fully functional and operates more efficiently than the previous version. It allows seamless interaction between sponsors and influencers and supports campaign creation, ad requests, and user profiles. The advanced version incorporates significant improvements such as a 40% reduction in response times due to Redis caching, enhanced security with JWT authentication, and better scalability with the use of Celery for task execution.
+            </p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

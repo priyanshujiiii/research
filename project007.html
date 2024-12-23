@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Showcase</title>
+    <title>Project Showcase</title>
     <style>
+        .github-link {
+            text-align: center; /* Center the link */
+            margin: 20px 0; /* Add some vertical spacing */
+        }
+
+        .github-link a {
+            display: inline-flex; /* Align icon and text inline */
+            align-items: center; /* Vertically center the icon and text */
+            text-decoration: none; /* Remove underline */
+            font-family: Arial, sans-serif; /* Use a clean font */
+            font-size: 16px; /* Set font size */
+            color: #4caf50; /* Dark gray for text color */
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid #333; /* Border around the link */
+            border-radius: 8px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth hover effect */
+        }
+
+        .github-link a:hover {
+            background-color: #333; /* Change background color on hover */
+            color: #0f0; /* Change text color on hover */
+        }
+
+        .github-link img {
+            width: 24px; /* Set icon width */
+            height: 24px; /* Set icon height */
+            margin-right: 10px; /* Space between icon and text */
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,6 +45,7 @@
             color: #0f0;
             padding: 10px;
             text-align: center;
+            border-bottom: 2px solid #333;
         }
 
         main {
@@ -38,8 +67,18 @@
         }
 
         .project h3 {
-            margin: 0 0 5px;
+            margin: 10px 0;
             color: #4caf50;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h4 {
+            margin-bottom: 10px;
+            color: #4caf50;
+            text-decoration: underline;
         }
 
         .frameworks {
@@ -59,25 +98,100 @@
 <body>
 
 <header>
-    <h1>BSCS2006P Course Project</h1>
+    <h1>Project Showcase</h1>
 </header>
 
 <main>
-    
-
     <div class="project">
-        <h2>BSCS2006P Course Project</h2>
-        <h3>September 2024</h3>
-        <p>
-            Developed an interactive user interface and implemented efficient state management techniques, ensuring optimal performance and scalability.
-        </p>
-        <div class="frameworks">
-            <span>Flask</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+        <!-- Project Title -->
+        <h2>BSCS2006P Course Project (S Grade)</h2>
+        <h3>Completed: September 2024</h3>
+        <div class="github-link">
+            <a href="https://github.com/priyanshujiiii/MAD2" target="_blank">
+                <img src="github.png" alt="GitHub Logo">
+                Visit Code here
+            </a>
         </div>
+
+        <div class="section">
+            <h4>Abstract</h4>
+            <p>
+                The project focuses on the development of an advanced web application platform designed to bridge the gap between sponsors and influencers. The system allows sponsors to create and manage campaigns, while influencers can accept ad requests and manage their profiles. The platform incorporates features such as role-based authentication, campaign management, ad request tracking, and batch processing for automated tasks. It aims to streamline the advertising process, optimize influencer engagement, and provide better control over campaign outcomes.
+            </p>
+        </div>
+
+        <!-- Description -->
+        <div class="section">
+            <h4>Project Description</h4>
+            <p>
+                The "Influencer Engagement & Sponsorship Coordination Platform - V2" is an advanced web application that connects sponsors with influencers to facilitate digital advertising. The platform allows sponsors to create, manage, and track campaigns while providing influencers the ability to respond to ad requests, negotiate terms, and update their profiles. Key features include role-based access control (RBAC), real-time notifications, and batch jobs for reminders and reports. Built using Flask for the backend, Vue.js for the frontend, and SQLite for data storage, the system is highly scalable and efficient.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="section">
+            <h4>Project Objectives</h4>
+            <ul>
+                <li>Develop a platform for sponsors and influencers to engage in advertisement contracts.</li>
+                <li>Implement role-based access control (RBAC) to manage user permissions effectively.</li>
+                <li>Provide asynchronous task execution with Celery and Redis for performance optimization.</li>
+                <li>Incorporate automated daily reminders and monthly activity reports for users.</li>
+                <li>Enhance security and privacy through token-based authentication and CORS handling.</li>
+            </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div class="section">
+            <h4>Methodology</h4>
+            <p>
+                The project was developed following an agile methodology with the following steps:
+            </p>
+            <ol>
+                <li>System architecture design with Flask backend and Vue.js frontend.</li>
+                <li>Integration of role-based authentication using JWT for secure login and session management.</li>
+                <li>Implementation of Celery and Redis for batch task execution such as sending reminders and generating reports.</li>
+                <li>Frontend development using Vue.js for dynamic interaction, form validation, and real-time updates.</li>
+                <li>Database setup with SQLite, storing data about users, campaigns, and ad requests.</li>
+                <li>Performance enhancement through caching techniques using Redis.</li>
+            </ol>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="section">
+            <h4>Technologies Used</h4>
+            <div class="frameworks">
+                <span>Flask</span> <span>Vue.js</span> <span>SQLite</span> <span>Celery</span> 
+                <span>Redis</span> <span>JWT</span> <span>Bootstrap</span> <span>Python</span>
+                <span>HTML</span> <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="section">
+            <h4>Results</h4>
+            <p>
+                The platform is fully functional, allowing seamless interaction between sponsors and influencers. It supports the creation of multiple campaigns, ad requests, and user profiles. The system successfully automates batch tasks such as daily reminders and monthly reports. Performance tests showed a 40% reduction in response times due to the implementation of Redis caching. Security measures, including token-based authentication, ensure safe user interactions.
+            </p>
+        </div>
+        <div class="section">
+            <h4>Wire Frame</h4>
+            <img src="IESCP_wireframe.png" alt="Wireframe" class="responsive-img">
+        </div>
+        <div class="section">
+            <h4>Database</h4>
+            <img src="oeanalytics.jpg" alt="Database Diagram" class="responsive-img">
+        </div>
+        
+        <style>
+            .responsive-img {
+                display: block;
+                max-width: 100%; /* Ensures the image does not exceed the container width */
+                height: auto; /* Maintains the aspect ratio */
+                margin: 10px auto; /* Centers the image horizontally */
+            }
+        </style>
+        
     </div>
-
-    
-
 </main>
 
 </body>
