@@ -53,6 +53,10 @@
         .frameworks {
             font-size: 0.9em;
             color: #999;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Adds space between the elements */
+            justify-content: flex-start;
         }
 
         .frameworks span {
@@ -61,7 +65,9 @@
             padding: 3px 8px;
             border-radius: 5px;
             margin-right: 5px;
+            white-space: nowrap; /* Prevents text from breaking within a single span */
         }
+
     </style>
 </head>
 <body>
@@ -79,7 +85,9 @@
             Developed an interactive user interface and implemented efficient state management techniques, ensuring optimal performance and scalability.
         </p>
         <div class="frameworks">
-            <span>Flask</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+            <span>Flask</span> <span>Vue.js</span> <span>SQLite</span> <span>Celery</span> 
+                <span>Redis</span> <span>JWT</span> <span>Bootstrap</span> <span>Python</span>
+                <span>HTML</span> <span>CSS</span>
         </div>
     </div>
 
@@ -92,6 +100,7 @@
         <div class="frameworks">
             <span>Python</span> <span>Flask</span> <span>SQLite</span> <span>Jinja2</span>
                 <span>Bootstrap</span> <span>HTML</span> <span>CSS</span>
+        </div>
     </div>
 
 </main>
