@@ -198,12 +198,14 @@
             color: #000;
         }
 
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px; /* Square image with rounded corners */
+            margin-bottom: 10px;
         }
+
 
         .about, .portfolio, .contact {
             padding: 2rem;
@@ -242,18 +244,9 @@
             text-decoration: none;
         }
 
-        .profile-image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-        }
 
         @media (max-width: 768px) {
-            .profile-image {
-                max-width: 300px;
-            }
+
 
             .hero .content {
                 max-width: 90%;
@@ -340,7 +333,43 @@
         .profile-box p {
             font-family: 'Arial', sans-serif;
         }
+        .profile-box {
+            flex: 1;
+            min-width: 280px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
 
+        .logos a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+
+        .logos img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .profile-content {
+            flex: 2;s
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-content {
+                text-align: center;
+            }
+        }
         /* About Section */
         .about {
             padding: 50px 20px;
@@ -436,12 +465,22 @@
     <section class="profile" id="profile">
         <div class="profile-box">
             <img src="profile.jpg" style="margin-top: 0px;" class="profile-image">
-            <p>
-                Hello, I am <strong>Sharma Priyanshu Dilip</strong>, currently pursuing a Bachelor's degree at <strong>IIT Madras</strong>, 
-                majoring in Computer Science and minoring in Artificial Intelligence. With a passion for Artificial Intelligence, 
-                Deep Learning, and Machine Learning, I strive to contribute to the ever-evolving world of technology. 
-                My academic pursuits are driven by a love for learning, and I enjoy solving complex challenges through innovation.
-            </p>
+            <div class="logos">
+                <a href="https://www.linkedin.com/in/priyanshujiiii/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/priyanshujiiii" target="_blank"><img src="github.png" alt="GitHub"></a>
+                <a href="https://x.com/priyanshujiiii" target="_blank"><img src="x.png" alt="Twitter"></a>
+                <a href="https://www.kaggle.com/priyanshujiiii" target="_blank"><img src="kaggle.png" alt="Kaggle"></a>
+                <a href="https://codeforces.com/profile/priyanshujiiii" target="_blank"><img src="codeforce.png" alt="Codeforce"></a>
+            </div>
+            <br>
+            <div class="profile-content">
+                <p>
+                    Hello, I am <strong>Sharma Priyanshu Dilip</strong>, currently pursuing a Bachelor's degree at <strong>IIT Madras</strong>, 
+                    majoring in Computer Science and minoring in Artificial Intelligence. With a passion for Artificial Intelligence, 
+                    Deep Learning, and Machine Learning, I strive to contribute to the ever-evolving world of technology. 
+                    My academic pursuits are driven by a love for learning, and I enjoy solving complex challenges through innovation.
+                </p>
+            </div>
         </div>
     </section>
     
