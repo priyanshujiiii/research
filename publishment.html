@@ -45,64 +45,48 @@
             text-decoration: underline;
         }
 
-        .project h3 {
-            margin: 0 0 5px;
-            color: #4caf50;
-        }
-
-        .frameworks {
+        .project .details {
+            margin: 10px 0;
             font-size: 0.9em;
-            color: #999;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Adds space between the elements */
-            justify-content: flex-start;
+            color: #ccc;
         }
 
-        .frameworks span {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 3px 8px;
-            border-radius: 5px;
+        .project .abstract {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        .project .keywords {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #bbb;
+        }
+
+        .project .keywords span {
+            background-color: #333;
+            border-radius: 4px;
+            padding: 2px 6px;
             margin-right: 5px;
-            white-space: nowrap; /* Prevents text from breaking within a single span */
         }
-
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Publishment</h1>
-</header>
-
-<main>
-
-    <div class="project">
-        <h2><a href="publishment002.html">Feature Engineering for Crop Health Prediction: Unlocking Key
-            Parameters for Machine Learning</a></h2>
-        <h3>September 2024</h3>
-        <p>
-            Developed an interactive user interface and implemented efficient state management techniques, ensuring optimal performance and scalability.
-        </p>
-        <div class="frameworks">
-            <span>Flask</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+    <header>
+        <h1>Research Publications</h1>
+    </header>
+    <main>
+        <div class="project">
+            <h2><a href="#">Title of the Research Paper</a></h2>
+            <div class="details">Author: John Doe | Published: January 2023</div>
+            <div class="abstract">
+                <strong>Abstract:</strong> This is a brief summary of the research paper. It provides an overview of the main points and findings.
+            </div>
+            <div class="keywords">
+                <strong>Keywords:</strong> <span>AI</span> <span>Machine Learning</span> <span>Deep Learning</span>
+            </div>
         </div>
-    </div>
-
-    <div class="project">
-        <h2><a href="publishment001.html">Feature Engineering for Home Loan Prediction: Deriving and
-            Evaluating Effective Parameters</a></h2>
-        <h3>May 2024</h3>
-        <p>
-            Built a robust platform for managing influencer-sponsor collaborations with advanced features for tracking and analytics.
-        </p>
-        <div class="frameworks">
-            <span>Flask</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
-        </div>
-    </div>
-
-</main>
-
+        <!-- Add more .project divs as needed -->
+    </main>
 </body>
 </html>
