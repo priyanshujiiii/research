@@ -48,3 +48,27 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
+
+
+<section class="portfolio" id="portfolio">
+        <h2>Research Highlights</h2>
+        <div class="portfolio-gallery">
+            <!-- Project 1 -->
+            <a href="project002.html" style="text-decoration: none; color: black;">
+                <img src="image1.png" alt="CryoET Object Identification" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">CryoET Object Identification</p>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="project003.html" style="text-decoration: none; color: black;">
+                <img src="image3.png" alt="Re-order Text to Minimise Perplexity" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">Re-order Text to Minimise Perplexity</p>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="project006.html" style="text-decoration: none; color: black;">
+                <img src="image2.png" alt="Predict Health Status of Crops" style="width: 200px; height: auto; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-weight: bold ;font-size: 20px;">Predict Health Status of Crops</p>
+            </a>
+        </div>
+    </section>
