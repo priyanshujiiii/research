@@ -98,7 +98,27 @@
             margin-right: 5px;
             white-space: nowrap; /* Prevents text from breaking within a single span */
         }
-
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -121,29 +141,34 @@
         </div>
 
         <div class="section">
-            <h4>Project Description</h4>
+            <h4>Abstract</h4>
             <p>
-                Abstract here
+                This project aims to leverage a comprehensive dataset of criminal activities within a city to predict crime categories using machine learning techniques. The dataset includes various features such as the date, time, location, and victim demographics of each incident. By applying machine learning models, this project seeks to uncover patterns in crime occurrences and develop predictive models that can assist law enforcement in enhancing their strategies and improving public safety. The overall objective is to provide actionable insights for anticipating crime trends, improving crime prevention efforts, and optimizing resource allocation. By utilizing advanced data analysis methods, this project demonstrates how data-driven approaches can be applied to address complex social issues like crime prediction and safety management.
+                One of the top-performing models in this project is the XGBoost Classifier, which reported an accuracy of 0.923 on the training dataset. However, when tested on the actual dataset, the model's accuracy slightly dropped to 0.88060. Despite this, XGBoost still demonstrates robust performance, indicating that it is highly capable of making accurate predictions for crime categories based on the features provided in the dataset.
             </p>
         </div>
 
         <!-- Description -->
         <div class="section">
+            <h4>Project Overview</h4>
+            <ul>
+                <li>This project involves analyzing a dataset of criminal activities, including details like date, time, location, and victim demographics.</li>
+                <li>The goal is to predict crime categories using machine learning techniques, helping improve law enforcement strategies and public safety measures.</li>
+            </ul>
+    
             <h4>Project Description</h4>
-            <p>
-                Description
-            </p>
+            <ul>
+                <li>Participants will develop models that classify crime types based on various incident details.</li>
+                <li>The challenge encourages innovative approaches to uncover patterns and transform data into actionable insights for crime prediction.</li>
+            </ul>
         </div>
 
         <!-- Objectives -->
         <div class="section">
             <h4>Project Objectives</h4>
-            <ul>
-                <li>here</li>
-                <li>here</li>
-                <li>here</li>
-                
-            </ul>
+            <p>
+                The objective of this project is to develop and implement optimized machine learning models that achieve high accuracy on the test data. The goal is to ensure robust performance and reliable predictions by applying advanced modeling techniques and thorough evaluation methods.
+            </p>
         </div>
 
         <!-- Methodology -->
@@ -152,20 +177,42 @@
             <p>
                 The project utilized a preprocessed dataset of customer reviews and implemented the following steps:
             </p>
-            <ol>
-                <li>Data cleaning and preprocessing using Python libraries such as NLTK and SpaCy.</li>
-                <li>Feature extraction with TF-IDF and word embeddings (GloVe).</li>
-                <li>Model training using Logistic Regression, Random Forest, and fine-tuned BERT.</li>
-                <li>Deployment of the best-performing model via Flask API.</li>
-            </ol>
+           
+            <ul>
+                <li><strong>Data Loading:</strong> Import the dataset and load it into the environment for analysis.</li>
+                <li><strong>Data Exploration:</strong>
+                    <ul>
+                        <li>Understand the columns and their descriptions.</li>
+                        <li>Analyze the data types in the crime dataset.</li>
+                        <li>Check for outliers and missing values.</li>
+                        <li>Visualize relationships using heat maps and other plots.</li>
+                    </ul>
+                </li>
+                <li><strong>Feature Engineering:</strong> Drop irrelevant columns and engineer new features as needed for better predictions.</li>
+                <li><strong>Data Preprocessing:</strong>
+                    <ul>
+                        <li>Preprocess the training and test data separately.</li>
+                        <li>Split the data into training and validation sets.</li>
+                    </ul>
+                </li>
+                <li><strong>Training the Model:</strong>
+                    <ul>
+                        <li>Build a baseline model using KNN.</li>
+                        <li>Train various models and check for the best accuracy.</li>
+                        <li>Decode predictions and make adjustments for final outputs.</li>
+                    </ul>
+                </li>
+                <li><strong>Submission File:</strong> Generate the predictions and create a submission file for evaluation.</li>
+                <li><strong>Results and Learning Outcomes:</strong> Evaluate the results, document findings, and derive insights for further improvement.</li>
+            </ul>
         </div>
 
         <!-- Technologies Used -->
         <div class="section">
             <h4>Technologies Used</h4>
             <div class="frameworks">
-                <span>Python</span> <span>TensorFlow</span> <span>BERT</span> <span>Flask</span> 
-                <span>NLTK</span> <span>SpaCy</span> <span>SQLite</span> <span>HTML</span> <span>CSS</span>
+                <span>Python</span> <span>Scikit-learn</span> <span>XGBoost</span> <span>NumPy</span> 
+                <span>Pandas</span> <span>Pickle</span> <span>Matplotlib</span> <span>Lightgbm</span> <span>Seaborn</span>
             </div>
         </div>
 
@@ -173,9 +220,54 @@
         <div class="section">
             <h4>Results</h4>
             <p>
-                Achieved an overall accuracy of 92% on the test dataset. The application can process over 500 reviews per second in real-time and provides insightful visualizations of sentiment trends.
+                The models generally exhibit strong reported accuracy, but there is a consistent decline in performance on the actual test dataset, with XGBoost (0.88060) and LightGBM (0.87220) leading the pack, while Gradient Boosting Classifier (0.83960) shows signs of overfitting despite the highest reported accuracy.
             </p>
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Classifier</th>
+                        <th>Reported Accuracy</th>
+                        <th>Actual Test Dataset Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>XGBoost (XGB)</td>
+                        <td>0.923</td>
+                        <td>0.88060</td>
+                    </tr>
+                    <tr>
+                        <td>LightGBM (LGBM)</td>
+                        <td>0.923</td>
+                        <td>0.87220</td>
+                    </tr>
+                    <tr>
+                        <td>Histogram-based Gradient Boosting (HGB)</td>
+                        <td>0.921</td>
+                        <td>0.86900</td>
+                    </tr>
+                    <tr>
+                        <td>CatBoost Classifier</td>
+                        <td>0.917</td>
+                        <td>0.85800</td>
+                    </tr>
+                    <tr>
+                        <td>Bagging Classifier</td>
+                        <td>0.912</td>
+                        <td>0.85820</td>
+                    </tr>
+                    <tr>
+                        <td>Random Forest Classifier (RFC)</td>
+                        <td>0.909</td>
+                        <td>0.86180</td>
+                    </tr>
+                    <tr>
+                        <td>Gradient Boosting Classifier (GBC)</td>
+                        <td>0.924</td>
+                        <td>0.83960</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 </main>
 
